@@ -22,22 +22,28 @@ body {
 }
 
 .cards {
-  /* border: 2px solid red; */
+  border: 2px solid red;
   position: relative;
   display: inline-block;
   top: 35px;
 }
 
-#frontcard-div > img,
+#frontcard-div > #frontcard-img,
 #backcard-div > img {
   height: 220px;
 }
 
 #frontcard-div,
 #backcard-div {
-  margin: 1rem;
-  /* border: 2px solid green; */
+  margin: 1rem 0rem;
+  border: 2px solid green;
   position: relative;
+}
+
+#img-circles {
+  position: absolute;
+  left: 10%;
+  top: 15%;
 }
 
 #frontcard-div {
