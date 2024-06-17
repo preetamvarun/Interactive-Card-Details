@@ -22,21 +22,46 @@ body {
 }
 
 .cards {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   position: relative;
   display: inline-block;
   top: 35px;
 }
 
+.name-content {
+  color: #fff;
+  /* border: 2px solid purple; */
+  position: absolute;
+  bottom: 10%;
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.number-content {
+  color: #fff;
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.number-content span {
+  letter-spacing: 0.3rem;
+}
+
 #frontcard-div > #frontcard-img,
 #backcard-div > img {
-  height: 220px;
+  height: 200px;
 }
 
 #frontcard-div,
 #backcard-div {
   margin: 1rem 0rem;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   position: relative;
 }
 
@@ -87,6 +112,7 @@ form {
 
 input::placeholder {
   color: #b0a9b3;
+  letter-spacing: 0.1rem;
 }
 
 .expiry-field {
@@ -135,4 +161,15 @@ input:focus {
   font-size: 1.2rem;
   width: 100%;
   border: none;
+}
+
+#backcard-div p {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+  right: 12%;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  font-size: 1.1rem;
 }
