@@ -1,0 +1,132 @@
+*,
+*:before,
+*:after {
+  padding: 0rem;
+  margin: 0rem;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+  color: #21092f;
+}
+
+body {
+  background-image: url('./images/bg-main-desktop.png');
+  background-repeat: no-repeat;
+  background-size: 30%;
+  overflow: hidden;
+}
+
+.cards {
+  /* border: 2px solid red; */
+  position: relative;
+  display: inline-block;
+  top: 35px;
+}
+
+#frontcard-div > img,
+#backcard-div > img {
+  height: 220px;
+}
+
+#frontcard-div,
+#backcard-div {
+  margin: 1rem;
+  /* border: 2px solid green; */
+  position: relative;
+}
+
+#frontcard-div {
+  left: 15%;
+}
+
+#backcard-div {
+  margin-top: 0.85rem;
+  left: 32%;
+}
+
+form {
+  position: absolute;
+  top: 80%;
+  right: 10%;
+  transform: translateY(-100%);
+  width: 30%;
+}
+
+.name-div input,
+.number-div input {
+  width: 100%;
+  padding: 0.75rem 0.5rem;
+  margin-top: 0.35rem;
+}
+
+.name-div input::placeholder,
+.number-div input::placeholder {
+  font-size: 1rem;
+}
+
+.name-div label,
+.number-div label {
+  display: block;
+}
+
+.number-div,
+.expiry-div {
+  margin-top: 1.75rem;
+}
+
+input::placeholder {
+  color: #b0a9b3;
+}
+
+.expiry-field {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.35rem;
+}
+
+.expiry-field input {
+  padding: 0.65rem 1.5rem;
+  padding-left: 0.45rem;
+}
+
+.expiry-div input:first-child,
+.expiry-div input:nth-child(2) {
+  width: 22%;
+}
+
+.expiry-span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expiry-span span:first-child {
+  flex: 1.85;
+}
+
+.expiry-span span:last-child {
+  flex: 1;
+}
+
+.expiry-div input:last-child {
+  width: 35%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.confirm-btn {
+  padding: 0.75rem 0rem;
+  border-radius: 8px;
+  background-color: #21092f;
+  color: #fcfcfd;
+  margin-top: 1.75rem;
+  font-size: 1.2rem;
+  width: 100%;
+  border: none;
+}
