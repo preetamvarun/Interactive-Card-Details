@@ -6,20 +6,29 @@ $(document).ready(function () {
   });
 
   // Function to handle month and year input fields
-  function handleInput(inputSelector, maxValue, outputSelector) {
+  function handleInput(
+    inputSelector,
+    maxInputLength,
+    maxValue,
+    outputSelector
+  ) {
     $(inputSelector).on('input', function () {
       let inputValue = $(this).val();
 
       // If the length in the input field is more than two characters
-      if (inputValue.length > 2) $(this).val(inputValue.slice(0, 2));
+      if (inputValue.length > maxInputLength)
+        $(this).val(inputValue.slice(0, maxInputLength));
 
       inputValue = Number(inputValue);
 
       // If the entered field is convertible to number and within the max value
       if (!isNaN(inputValue) && inputValue <= maxValue) {
         inputValue = String(inputValue);
-        if (inputValue.length === 1) {
+        if (maxInputLength === 2 && inputValue.length === 1) {
           inputValue = '0' + inputValue;
+        } else if (maxInputLength === 3 && inputValue.length <= 2) {
+          if (inputValue.length === 1) inputValue = '00' + inputValue;
+          else inputValue = '0' + inputValue;
         }
         $(outputSelector).text(inputValue);
       }
@@ -27,6 +36,7 @@ $(document).ready(function () {
   }
 
   // Apply the handleInput function to both month and year input fields
-  handleInput('#month-input', 12, '#month');
-  handleInput('#year-input', 99, '#year');
+  handleInput('#month-input', 2, 12, '#month');
+  handleInput('#year-input', 2, 99, '#year');
+  handleInput('#cvc-input', 3, 999, '#cvc');
 });
