@@ -50,10 +50,12 @@
       <div class="name-div">
         <label>CARDHOLDER NAME</label>
         <input type="text" placeholder="e.g. Jane Appleseed" id="input-name" />
+        <p class="error" id="name-error">Name should be atleast 5 characters</p>
       </div>
       <div class="number-div">
         <label>CARD NUMBER</label>
         <input type="text" placeholder="e.g. 0232 2321 1212 3432" />
+        <p class="error">Enter a valid card number</p>
       </div>
       <div class="expiry-div">
         <div class="expiry-span">
@@ -65,6 +67,7 @@
           <input type="text" placeholder="YY" id="year-input" />
           <input type="text" placeholder="e.g. 123" id="cvc-input" />
         </div>
+        <p class="error">Enter correct dates & CVC</p>
       </div>
       <button class="confirm-btn">Confirm</button>
     </form>

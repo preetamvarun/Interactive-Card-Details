@@ -12,9 +12,6 @@ body {
   font-style: normal;
   font-weight: 500;
   color: #21092f;
-}
-
-body {
   background-image: url('./images/bg-main-desktop.png');
   background-repeat: no-repeat;
   background-size: 30%;
@@ -172,4 +169,11 @@ input:focus {
   font-weight: bold;
   letter-spacing: 0.2rem;
   font-size: 1.1rem;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 0.45rem;
+  display: none;
 }
