@@ -193,11 +193,93 @@ input:focus {
   display: none;
 }
 
-@media only screen and (min-width: 300px) {
+/* SMARTPHONES LANDSCAPE */
+@media (min-width: 300px) and (max-width: 530px) {
+  body {
+    background-repeat: repeat-y;
+    background-size: 40%;
+  }
+  #frontcard-div > #frontcard-img,
+  #backcard-div > img {
+    height: 90px;
+  }
+
+  #frontcard-div > #img-circles {
+    height: 22px;
+  }
+
+  .thankyou {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 0.86rem;
+  }
+
+  form {
+    top: 70%;
+    width: 40%;
+    right: 2%;
+    font-size: 0.85rem;
+  }
+
+  .confirm-btn {
+    font-size: 0.85rem;
+  }
+
+  .number-content,
+  .name-content {
+    font-size: 0.5rem;
+  }
+  #backcard-div p {
+    font-size: 0.65rem;
+  }
+  .cards {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
-/* SMARTPHONES LANDSCAPE */
-@media only screen and (min-width: 480px) {
+@media (min-width: 530px) and (max-width: 768px) {
+  body {
+    background-repeat: repeat-y;
+    background-size: 40%;
+  }
+  #frontcard-div > #frontcard-img,
+  #backcard-div > img {
+    height: 110px;
+  }
+
+  #frontcard-div > #img-circles {
+    height: 35px;
+  }
+
+  .thankyou {
+    width: 50%;
+    position: absolute;
+    top: 60%;
+    right: 0;
+  }
+
+  form {
+    top: 70%;
+    width: 45%;
+    right: 2%;
+  }
+
+  .number-content,
+  .name-content {
+    font-size: 0.65rem;
+  }
+  #backcard-div p {
+    font-size: 0.75rem;
+  }
+  .cards {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 /* TABLETS PORTRAIT */
@@ -233,7 +315,7 @@ input:focus {
 }
 
 /* TABLET LANDSCAPE / DESKTOP */
-@media only screen and (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1300px) {
   #frontcard-div > #frontcard-img,
   #backcard-div > img {
     height: 210px;
