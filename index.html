@@ -18,8 +18,8 @@
     <script src="./jquery.js"></script>
   </head>
   <body>
-    <div class="cards">
-      <div id="frontcard-div">
+    <section class="cards">
+      <article id="frontcard-div">
         <img src="./images/card-logo.svg" id="img-circles" alt="circles" />
         <img
           src="./images/bg-card-front.png"
@@ -39,43 +39,52 @@
             <span id="year">00</span>
           </div>
         </div>
-      </div>
-      <div id="backcard-div">
+      </article>
+      <article id="backcard-div">
         <img src="./images/bg-card-back.png" alt="back-card" />
         <p id="cvc">232</p>
-      </div>
-    </div>
+      </article>
+    </section>
 
-    <p class="thankyou">Thank you! Your details have been saved</p>
+    <section class="confirmation">
+      <p class="thankyou">Thank you! Your details have been saved</p>
+    </section>
 
-    <form class="card-details-form">
-      <div class="name-div">
-        <label>CARDHOLDER NAME</label>
-        <input type="text" placeholder="e.g. Jane Appleseed" id="input-name" />
-        <p class="error" id="name-error">Name should be atleast 5 characters</p>
-      </div>
-      <div class="number-div">
-        <label>CARD NUMBER</label>
-        <input
-          type="text"
-          placeholder="e.g. 0232 2321 1212 3432"
-          id="input-number" />
-        <p class="error" id="number-error">Enter a valid card number</p>
-      </div>
-      <div class="expiry-div">
-        <div class="expiry-span">
-          <span>EXP.DATE (MM/YY)</span>
-          <span>CVC</span>
+    <section>
+      <form class="card-details-form">
+        <div class="name-div">
+          <label for="input-name">CARDHOLDER NAME</label>
+          <input
+            type="text"
+            placeholder="e.g. Jane Appleseed"
+            id="input-name" />
+          <p class="error" id="name-error">
+            Name should be at least 5 characters
+          </p>
         </div>
-        <div class="expiry-field">
-          <input type="text" placeholder="MM" id="month-input" />
-          <input type="text" placeholder="YY" id="year-input" />
-          <input type="text" placeholder="e.g. 123" id="cvc-input" />
+        <div class="number-div">
+          <label for="input-number">CARD NUMBER</label>
+          <input
+            type="text"
+            placeholder="e.g. 0232 2321 1212 3432"
+            id="input-number" />
+          <p class="error" id="number-error">Enter a valid card number</p>
         </div>
-        <p class="error" id="date-error">Enter correct dates & CVC</p>
-      </div>
-      <button class="confirm-btn">Confirm</button>
-    </form>
+        <div class="expiry-div">
+          <div class="expiry-span">
+            <span>EXP. DATE (MM/YY)</span>
+            <span>CVC</span>
+          </div>
+          <div class="expiry-field">
+            <input type="text" placeholder="MM" id="month-input" />
+            <input type="text" placeholder="YY" id="year-input" />
+            <input type="text" placeholder="e.g. 123" id="cvc-input" />
+          </div>
+          <p class="error" id="date-error">Enter correct dates & CVC</p>
+        </div>
+        <button type="button" class="confirm-btn">Confirm</button>
+      </form>
+    </section>
 
     <script src="./main.js"></script>
   </body>
