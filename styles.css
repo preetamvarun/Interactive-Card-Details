@@ -192,3 +192,50 @@ input:focus {
   margin-top: 0.45rem;
   display: none;
 }
+
+@media only screen and (min-width: 300px) {
+}
+
+/* SMARTPHONES LANDSCAPE */
+@media only screen and (min-width: 480px) {
+}
+
+/* TABLETS PORTRAIT */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-image: url('./images/bg-main-desktop.png');
+    background-repeat: repeat-y;
+    background-size: 40%;
+  }
+  form {
+    top: 60%;
+    width: 40%;
+    right: 5%;
+  }
+  #frontcard-div > #frontcard-img,
+  #backcard-div > img {
+    height: 170px;
+  }
+  .number-content {
+    font-size: 0.95rem;
+  }
+  .cards {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .thankyou {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+}
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+  #frontcard-div > #frontcard-img,
+  #backcard-div > img {
+    height: 210px;
+  }
+}

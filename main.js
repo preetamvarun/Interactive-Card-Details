@@ -46,6 +46,7 @@ $(document).ready(function () {
       while (parts.length < 4) {
         parts.push('0000');
       }
+
       for (let i = 0; i < 4; i++) {
         if (parts[i].length < 4) {
           parts[i] = parts[i].padEnd(4, '0');
