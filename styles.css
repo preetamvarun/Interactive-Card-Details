@@ -85,6 +85,17 @@ form {
   width: 30%;
 }
 
+.thankyou {
+  color: 21092f;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-100%);
+  font-size: 1.75rem;
+  color: orange;
+  display: none;
+}
+
 .name-div input,
 .number-div input {
   width: 100%;
@@ -158,6 +169,10 @@ input:focus {
   font-size: 1.2rem;
   width: 100%;
   border: none;
+}
+
+.confirm-btn:hover {
+  cursor: pointer;
 }
 
 #backcard-div p {

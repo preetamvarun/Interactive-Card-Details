@@ -26,10 +26,10 @@
           alt="front-card"
           id="frontcard-img" />
         <div class="number-content">
-          <span>0000</span>
-          <span>0000</span>
-          <span>0000</span>
-          <span>0000</span>
+          <span id="part-1">0000</span>
+          <span id="part-2">0000</span>
+          <span id="part-3">0000</span>
+          <span id="part-4">0000</span>
         </div>
         <div class="name-content">
           <span id="name-on-card">JANE APPLESSED</span>
@@ -46,6 +46,8 @@
       </div>
     </div>
 
+    <p class="thankyou">Thank you! Your details have been saved</p>
+
     <form class="card-details-form">
       <div class="name-div">
         <label>CARDHOLDER NAME</label>
@@ -54,8 +56,11 @@
       </div>
       <div class="number-div">
         <label>CARD NUMBER</label>
-        <input type="text" placeholder="e.g. 0232 2321 1212 3432" />
-        <p class="error">Enter a valid card number</p>
+        <input
+          type="text"
+          placeholder="e.g. 0232 2321 1212 3432"
+          id="input-number" />
+        <p class="error" id="number-error">Enter a valid card number</p>
       </div>
       <div class="expiry-div">
         <div class="expiry-span">
@@ -67,7 +72,7 @@
           <input type="text" placeholder="YY" id="year-input" />
           <input type="text" placeholder="e.g. 123" id="cvc-input" />
         </div>
-        <p class="error">Enter correct dates & CVC</p>
+        <p class="error" id="date-error">Enter correct dates & CVC</p>
       </div>
       <button class="confirm-btn">Confirm</button>
     </form>
